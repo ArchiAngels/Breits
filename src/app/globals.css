@@ -16,12 +16,56 @@
   }
 }
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(to right,#e66465, #9198e5);
+} */
+
+
+.labels{
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.inputs{
+  display: block;
+  border-radius: 0.3125rem;
+  margin-top: 0.3125rem;
+  height:3.125rem;
+  width:25rem;
+  outline: none;
+  transition: 0.125s;
+  border: 1px solid transparent;
+  margin-bottom:1.25rem;
+}
+.inputs:focus{
+  border:1px solid #3266CB;
+}
+.accept_links > a{
+  color:#3266CB;
+  cursor: pointer;
+
+}
+.accept_links > a:hover{
+  text-decoration: underline;
+}
+
+.formButton{
+  width:11.25rem;
+  height:2.25rem;
+  background-color: #3266CB;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.75rem;
+  border-radius: 0.25rem;
+  color:#fff;
+}
+.ContactUsOl li{
+  font-weight:500;
+  font-size:0.9375rem;
+}
+.contactUsIcons{
+  width:4.5rem;
+  height:4.5rem;
+  object-fit: none;
+  margin:1.5rem;
 }
