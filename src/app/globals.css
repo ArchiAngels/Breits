@@ -69,3 +69,23 @@
   object-fit: none;
   margin:1.5rem;
 }
+
+.FooterLiis li{
+  cursor:pointer;
+  font-weight: 500;
+  font-size:0.9375rem;
+  margin: 0.9375rem 0;
+  transition: 0.125s;
+
+}
+
+.FooterLiis li:hover{
+  text-decoration: underline;
+}
+
+.FooterIcons{
+  width:1.5rem;
+  height: 1.5rem;
+
+  cursor: pointer;
+}

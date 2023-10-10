@@ -4,7 +4,7 @@ import Picture from '../../public/weAreBreits.jpg'
 export default function WhoWeAre(){
     return <div className='flex flex-row pl-24'>
         
-        <div className='grow'>
+        <div className='grow z-[1]'>
             <h1 className='font-bold text-100 mt-238 mb-10'>WE ARE BRE<span className='text-bblue'>IT</span>S</h1>
             <p className='text-4xl font-medium mb-216'>Your reliable partner in <br/>
                 <span className='text-bblue '>development, adaptation, <br/>integration </span>
@@ -20,10 +20,11 @@ export default function WhoWeAre(){
                 </div>
            </div>
         </div>
-        <div className='mr-0 -mt-28'>
+        <div className='mr-0 -mt-28 relative z-[0]'>
             <Image
                 src = {Picture}
                 alt="image of points"
+                className="absolute right-[0] top-[0]  max-w-none"
 
             />
         </div>

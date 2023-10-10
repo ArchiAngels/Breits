@@ -3,9 +3,9 @@ import Image from 'next/image'
 
 export default function WhoWeAre(){
 
-    return <div className="px-24 bg-weAre pt-200 pb-[6.75rem]">
+    return <div className="px-24 bg-weAre pt-200 pb-[6.75rem] relative z-[1]">
         <h2 className='font-bold text-4r mb-20.1'>WHO <span className="text-bblue">WE</span> ARE</h2>
-        <div className='flex flex-row justify-between'>
+        <div className='flex flex-row zero:max-lg:flex-col justify-between'>
             <div>                
 
                 <p className='text-20 max-w-screen-sm leading-6'>
@@ -25,30 +25,30 @@ export default function WhoWeAre(){
                 </p>
                     
             </div>
-            <div className='relative'>
-                <div className='absolute w-full h-full bg-bblue top-6 left-6 z-0'></div>
+            <div className='relative zero:max-lg:mt-[4rem]'>
+                <div className='absolute lg:w-full h-full bg-bblue top-6 left-6 z-0'></div>
                 <Image className='z-10 relative h-full'  src={teamPhoto} alt ='team breits photo'/>
             </div>
             
         </div>
 
-        <div className='flex flex-row pt-28'>
+        <div className='flex lg:flex-row zero:max-lg:flex-col pt-28'>
             <div className='flex items-center'>
-                <div className='flex mr-16'>
+                <div className='flex lg:mr-16 zero:max-lg:mx-auto'>
                     <div><span className='text-bblue font-bold text-6r'>3</span></div>
                     <div className='font-semibold text-20 ml-2.5 leading-[3.56rem]'>
                         <p>lorem ipsum</p>
                     </div>
                 </div>
             </div>
-            <div className='border-x-2 mx-16 px-16'>
-                <div className='flex mb-12'>
+            <div className='lg:border-x-2 zero:max-lg:border-y-2 lg:mx-16 lg:px-16 zero:max-lg:my-16 zero:max-lg:py-16'>
+                <div className='flex mb-12 zero:max-lg:justify-center'>
                     <div><span className='text-black font-bold text-4r'>+12</span></div>
                     <div className='ml-5 font-semibold text-20 leading-[2.5rem]'>
                         <p>lorem ipsum</p>
                     </div>
                 </div>
-                <div className='flex'>
+                <div className='flex zero:max-lg:justify-center'>
                     <div><span className='text-black font-bold text-4r'>{'>'}53</span></div>
                     <div className='ml-5 font-semibold text-20 leading-[2.5rem]'>
                         <p>lorem ipsum</p>
@@ -56,13 +56,13 @@ export default function WhoWeAre(){
                 </div>
             </div>
             <div className=''>
-                <div className='flex mb-12'>
+                <div className='flex mb-12 zero:max-lg:justify-center'>
                     <div><span className='text-black font-bold text-4r'>{'>'}4</span></div>
                     <div className='ml-5 font-semibold text-20 leading-[2.5rem]'>
                         <p>lorem ipsum</p>
                     </div>
                 </div>
-                <div className='flex'>
+                <div className='flex zero:max-lg:justify-center'>
                     <div><span className='text-black font-bold text-4r'>{'>'}8</span></div>
                     <div className='ml-5 font-semibold text-20 leading-[2.5rem]'>
                         <p>lorem ipsum</p>
