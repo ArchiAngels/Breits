@@ -5,7 +5,7 @@ import Twetter from "../../public/twetter.png";
 import Indeed from "../../public/indeed.png";
 
 export default function Footer(){
-    return <div className="bg-[#142A54] max-w-[1440px] mx-auto px-[6.25rem] pt-[5rem] pb-[2.5rem] min-h-[25rem] text-white">
+    return <div className="bg-[#142A54] max-w-[1440px] mx-auto zero:max-lg:px-10 lg:px-[6.25rem] pt-[5rem] pb-[2.5rem] min-h-[25rem] text-white">
         <div className="flex flex-row zero:max-lg:flex-col zero:max-lg:text-center max-w-[1010px] justify-between">
             <div>
                 <p className="font-bold text-[2rem] leading-[2rem]">BRE<span className="text-bblue">IT</span>S</p>

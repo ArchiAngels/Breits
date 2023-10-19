@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function WhoWeAre(){
 
-    return <div className="px-24 bg-weAre pt-200 pb-[6.75rem] relative z-[1]">
+    return <div className="zero:max-lg:px-10 zero:max-lg:px-10 lg:px-24 bg-weAre pt-200 pb-[6.75rem] relative z-[1]">
         <h2 className='font-bold text-4r mb-20.1'>WHO <span className="text-bblue">WE</span> ARE</h2>
         <div className='flex flex-row zero:max-lg:flex-col justify-between'>
             <div>                

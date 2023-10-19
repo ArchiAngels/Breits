@@ -6,7 +6,7 @@ import List from '../../public/list.png';
 import Talk from '../../public/talk.png';
 
 export default function ContactUs(){
-    return <div className="px-24 bg-[#F5F8FF] py-[5.625rem]">
+    return <div className="zero:max-lg:px-10 lg:px-24 bg-[#F5F8FF] py-[5.625rem]">
         <div className="flex flex-row flex-wrap">
             <div className="w-full mb-[3.125rem]">
                 <h3 className="uppercase font-bold text-4r">Contact <span className="text-bblue">us</span></h3>

@@ -1,5 +1,5 @@
 export default function Header() {
-    return  <div className="px-24 py-6 w-screen bg-white h-20 fixed drop-shadow z-50 max-w-[1440px] left-[50%] -translate-x-[50%]">
+    return  <div className="zero:max-lg:px-10 lg:px-24 py-6 w-screen bg-white h-20 fixed drop-shadow z-50 max-w-[1440px] lg:left-[50%] lg:-translate-x-[50%]">
             <div className="flex flex-row justify-between">
                 <div>
                     <p className="font-bold text-2r">BRE<span className="text-bblue">IT</span>S</p>

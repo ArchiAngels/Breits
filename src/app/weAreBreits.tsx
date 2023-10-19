@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Picture from '../../public/weAreBreits.jpg'
 
 export default function WhoWeAre(){
-    return <div className='flex flex-row pl-24'>
+    return <div className='flex flex-row zero:max-lg:px-10 lg:px-24'>
         
         <div className='grow z-[1]'>
             <h1 className='font-bold text-100 mt-238 mb-10'>WE ARE BRE<span className='text-bblue'>IT</span>S</h1>
@@ -20,7 +20,7 @@ export default function WhoWeAre(){
                 </div>
            </div>
         </div>
-        <div className='mr-0 -mt-28 relative z-[0]'>
+        <div className='mr-0 -mt-28 relative z-[0] zero:max-lg:hidden lg:block'>
             <Image
                 src = {Picture}
                 alt="image of points"
