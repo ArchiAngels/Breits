@@ -1,4 +1,16 @@
+"use client"
+import Link from 'next/link'
+import { usePathname } from '../../node_modules/next/navigation';
+
+
+
 export default function Header() {
+    let linkToForm = "/contact";
+    let linkToMainPage = "/";
+    let toForm = "Contact Us";
+    let toMainPage = "Home"
+    const pathname = usePathname()
+    console.log(pathname)
     return  <div className="zero:max-lg:px-10 lg:px-24 py-6 w-screen bg-white h-20 fixed drop-shadow z-50 max-w-[1440px] lg:left-[50%] lg:-translate-x-[50%]">
             <div className="flex flex-row justify-between">
                 <div>
@@ -22,7 +34,9 @@ export default function Header() {
                         
                     </div>
                     <div className="w-40 h-9 bg-bblue text-white rounded text-center hover:cursor-pointer active:translate-y-3 ease-out duration-150">
-                        <p className="leading-9 uppercase text-xs font-semibold">Contact us</p>
+                        <Link href={pathname === '/'? linkToForm: linkToMainPage}>
+                            <p className="leading-9 uppercase text-xs font-semibold">{pathname === '/'? toForm: toMainPage}</p>
+                        </Link>
                     </div>
                 </div>
             </div>

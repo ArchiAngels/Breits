@@ -1,9 +1,9 @@
 
-import Image from "../../node_modules/next/image"
+import Image from "../../../node_modules/next/image"
 
-import Plan from '../../public/plan.png';
-import List from '../../public/list.png';
-import Talk from '../../public/talk.png';
+import Plan from '../../../public/plan.png';
+import List from '../../../public/list.png';
+import Talk from '../../../public/talk.png';
 
 export default function ContactUs(){
     return <div className="zero:max-lg:px-10 lg:px-24 bg-[#F5F8FF] py-[5.625rem]">
@@ -36,7 +36,7 @@ export default function ContactUs(){
                             <input type="checkbox" id="accept_laws" required/>
                             <label htmlFor="accept_laws" className="accept_links font-regular text-[0.9375rem] ml-[0.625rem]">By checking this box, I agree to the <a>Privacy Policy</a> and <a>Terms of Use</a></label>
                         </div>
-                        <input type="submit" value={'CONTACT US'} className="formButton zero:max-lg:w-full" disabled title="disabled"/>
+                        <input type="submit" value={'CONTACT US'} className="formButton zero:max-lg:w-full" />
 
                     </form>
                 </div>
