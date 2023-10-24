@@ -89,3 +89,7 @@
 
   cursor: pointer;
 }
+
+input,textarea{
+  padding-left: 0.625rem;
+}
